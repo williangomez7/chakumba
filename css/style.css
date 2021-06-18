@@ -1,0 +1,50 @@
+html {
+    box-sizing: border-box;
+    font-size: 62.5%;
+  }
+*, *:before, *:after {
+    box-sizing: inherit;   
+  }
+
+body{
+    background-image: url(/fondos/IMG_3852.JPG);
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+video {
+  margin: 0 auto;
+  max-width: 90%;
+}
+
+.contenedor {
+  max-width: 120rem;
+  margin:5rem auto;
+}
+
+.barra{
+  display: flex;  
+  align-items: center;
+  margin-bottom: 5rem;
+  gap: 2rem;
+}
+.logo1{
+  margin: 0 auto;
+  width: 75%;
+} 
+
+.videos {
+  width: 100%;
+  gap: 5rem;
+  
+}
+
+@media (min-width: 768px) {
+    .videos{
+      display: grid;
+      grid-template-columns: repeat( 2, 1fr);
+      columns: auto;
+      column-gap: 5rem;
+      width: 100%;
+    }
+}
